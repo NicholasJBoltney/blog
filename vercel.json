@@ -3,8 +3,6 @@
   "buildCommand": "cd frontend && npm run build",
   "outputDirectory": "frontend/.next",
   "framework": "nextjs",
-  "installCommand": "cd frontend && npm install",
-  "env": {
-    "NEXT_PUBLIC_GOOGLE_ADSENSE_CLIENT_ID": "@google_adsense_client_id"
-  }
+  "installCommand": "cd frontend && npm install"
+
 } 
