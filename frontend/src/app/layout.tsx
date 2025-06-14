@@ -1,18 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { GoogleAdsenseScript } from '@/components/GoogleAdsenseScript';
-import { BannerAds } from '@/components/BannerAds';
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { AdLayoutWrapper } from '@/components/AdLayoutWrapper';
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,15 +14,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <GoogleAdsenseScript />
-      </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <BannerAds position="left" />
-        <main className="min-h-screen px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-          {children}
-        </main>
-        <BannerAds position="right" />
+      <body>
+        <AdLayoutWrapper>{children}</AdLayoutWrapper>
       </body>
     </html>
   );
