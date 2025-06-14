@@ -4,7 +4,7 @@ export const GoogleAdsenseScript = () => {
   return (
     <Script
       async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=YOUR-AD-CLIENT-ID"
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
       crossOrigin="anonymous"
       strategy="afterInteractive"
     />

@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 
 declare global {
   interface Window {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     adsbygoogle: any[];
   }
 }
@@ -25,7 +26,6 @@ export const GoogleAds: React.FC<GoogleAdsProps> = ({ adSlot, adFormat = 'auto',
     <ins
       className="adsbygoogle"
       style={style}
-      data-ad-client="YOUR-AD-CLIENT-ID" // Replace with your AdSense client ID
       data-ad-slot={adSlot}
       data-ad-format={adFormat}
       data-full-width-responsive="true"
