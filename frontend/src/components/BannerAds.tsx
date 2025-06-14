@@ -1,3 +1,5 @@
+"use client";
+
 import { GoogleAds } from './GoogleAds';
 import { AD_CONFIG } from '@/config/ads';
 
