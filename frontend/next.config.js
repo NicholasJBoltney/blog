@@ -7,11 +7,6 @@ const nextConfig = {
   images: {
     domains: ['pagead2.googlesyndication.com'],
   },
-  // Enable static optimization where possible
-  experimental: {
-    optimizeCss: true,
-    scrollRestoration: true,
-  },
   // Configure headers for security
   async headers() {
     return [
